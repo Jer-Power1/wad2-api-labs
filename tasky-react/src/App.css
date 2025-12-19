@@ -1,0 +1,189 @@
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+div {
+  padding: 20px;
+}
+
+.container{
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  font-family: system-ui;
+  background: #5bb4c4;
+  color: white;
+  text-align: center;
+  width: 180px;
+  height: 240px;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2em; 
+}
+
+
+.desc {
+  margin-top: 12px;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+.priority {
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+/* color accents by level */
+.priority.low {
+  opacity: 0.9;
+}
+
+.priority.medium {
+  text-decoration: none;
+}
+
+.priority.high {
+  text-transform: uppercase;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 4px 6px;
+  width: 50px;
+  height: 25px;
+}
+
+.doneButton {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: green;
+}
+
+.deleteButton {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: red;
+}
+
+input[type=text], input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+form {
+  text-align: left;
+  width: 50%;
+  margin: auto;
+}
+
+select[name=priority] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.priority {
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.priority.low       { opacity: 0.9; }
+.priority.medium    { text-decoration: none; }
+.priority.high      { text-transform: uppercase; }
+
+.prio-low    { box-shadow: 0 0 0 3px rgba(0, 200, 0, 0.25) inset; }
+.prio-medium { box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.35) inset; }
+.prio-high   { box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.35) inset; }
+
+/* priority pill */
+.badge {
+  margin: 14px auto 0;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  width: 60%;
+  text-align: center;
+  background: #ddd;
+  color: #222;
+}
+
+/* colors per level */
+.badge.low {
+  background: #0a8a12;   /* green */
+  color: #fff;
+}
+
+.badge.medium {
+  background: #e0a325;   /* amber */
+  color: #fff;
+}
+
+.badge.high {
+  background: #e31b1b;   /* red */
+  color: #fff;
+}
+
+/* optional: a subtle accent on the whole card by priority */
+.card.prio-low    { box-shadow: 0 0 0 3px rgba(10,138,18,.15) inset; }
+.card.prio-medium { box-shadow: 0 0 0 3px rgba(224,163,37,.18) inset; }
+.card.prio-high   { box-shadow: 0 0 0 3px rgba(227,27,27,.2) inset; }
+
+/* make Done/Delete look like the screenshot (optional) */
+.doneButton, .deleteButton {
+  background: #fff;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.deleteButton { color: #d62828; }
+
